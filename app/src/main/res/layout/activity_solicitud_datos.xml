@@ -7,21 +7,14 @@
     android:layout_height="match_parent"
     tools:context=".ui.login.SolicitudDatos">
 
-    <TextView
-        android:id="@+id/text_view_datos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@android:color/black"
-        android:textSize="20sp" />
-
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="13dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="52dp"
         android:text="Cerrar sesion"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,12 +22,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.887" />
-    <Button
-        android:id="@+id/button_parse"
+
+    <TextView
+        android:id="@+id/text_view_datos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="29dp"
-        android:text="parse" />
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/lista"
+        android:layout_width="wrap_content"
+        android:layout_height="514dp"
+        android:layout_above="@+id/button"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="88dp">
+
+    </ListView>
+
 </RelativeLayout>
